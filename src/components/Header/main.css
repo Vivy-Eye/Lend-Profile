@@ -35,6 +35,6 @@
 .menu__ul{
   display: none;
 }
-#btn-toggle-menu:checked + .menu__ul {
+#btn-toggle-menu:checked +.menu__ul {
   display: flex;
 }

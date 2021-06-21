@@ -9,17 +9,11 @@
 
     <link rel="shortcut icon" href="img/Logo_hover.png" />
     <link rel="stylesheet" href="./src/index.css">
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="css/isotope_items.css" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
   </head>
   <body>
 		<noscript class="noscript">
-			<h2 class="noscript__title">This page need JavaScript</h2>
-			<p class="noscript__desc">Please turn on <span>JavaScript</span>.</p>
+			<!-- <h2 class="noscript__title">This page need JavaScript</h2> -->
+			<!-- <p class="noscript__desc">Please turn on <span>JavaScript</span>.</p> -->
 			<style>
 				.noscript{
           display: flex;
@@ -41,16 +35,36 @@
 					font-size: 2rem;
 				}
 			</style>
+      
+      <h3 class="noscript__container">
+        <span class="noscript__span">This page need JavaScript</span>
+        <span class="noscript__span">Please turn on <span>JavaScript</span></span>
+      </h3>
+      <style>
+        .noscript{
+          background-color: #ece5da;
+          text-align: center;
+        }
+        .noscript__container{
+          /* margin: 20px; */
+          font-family: "Paytone One";
+          color: #202020;
+          text-transform: uppercase;
+          letter-spacing: -2px;
+        }
+        .noscript__span{
+          display: block;
+          margin: 11px 0 17px 0;
+          font-size: 2.2rem;
+          line-height: 80px;
+          color: #f1ebe5;
+          text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+          letter-spacing: -4px;
+        }
+      </style>
 		</noscript>
 
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-		<header id="header" class="header">
+		<header>
 			<!-- <a href="https://www.behance.net/ganeshpayyanur" class="logo"></a> -->
 			<!-- <div class="profile">
         <img class="profile__img" src="https://www.atomix.com.au/media/2015/06/atomix_user31.png" />
@@ -63,16 +77,10 @@
       </div> -->
 
 			<nav id="menu" class="menu">
-        <!-- <div class="cube">
-          <div class="cube-container">
-            <div class="back side"></div>
-            <div class="left side"></div>
-            <div class="right side"></div>
-            <div class="top side"></div>
-            <div class="bottom side"></div>
-            <div class="front side"></div>
-          </div>
-        </div> -->
+        <label for="btn-toggle-menu" class="page-title">
+          <span>Alexander Poznyakov</span>
+        </label>
+        <input type="checkbox" id="btn-toggle-menu">
 
 				<ul class="menu__ul">
 					<!-- <li class="menu__item"><a href="#item">item</a></li> -->
@@ -83,15 +91,15 @@
 			<link rel="stylesheet" href="./src/components/menu/main.css">
 		</header>
 
-		<main id="main" class="main">
+		<main>
 			<div id="portfolio" class="portfolio">
 				<div class="filters">
 					<ul class="filters__list">
-						<li><a class="filter__button" href="#sl1" filter-attribute="*">All</a></li>
-						<li><a class="filter__button" href="#sl1" filter-attribute=".javascript">JavaScript</a></li>
-						<li><a class="filter__button" href="#sl1" filter-attribute=".python">Python</a></li>
-						<li><a class="filter__button" href="#sl1" filter-attribute=".bot">Bot</a></li>
-						<li><a class="filter__button" href="#sl1" filter-attribute=".spa">SPA</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute="*">All</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".javascript">JavaScript</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".python">Python</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".bot">Bot</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".spa">SPA</a></li>
 					</ul>
 				</div>
 
@@ -117,72 +125,10 @@
         <script src="./src/components/portfolio/projects/main.js"></script>
         <link rel="stylesheet" href="./src/components/portfolio/projects/main.css">
 			</div>
+
+      #resum
 		</main>
 
-    <!-- <footer id="footer" class="footer">
-      <a href="#" class="back-to-top"><img src="img/to_top.png" /></a>
-
-      <div class="foot_main">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-7 col-sm-12">
-              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
-                <img class="logo_foot" src="img/Logo_Large.png" />
-              </div>
-              <div class="col-lg-10 col-md-9 col-sm-9 col-sx-12 social_main">
-                <h1>Ganesh Krishnan R</h1>
-                <p>Kannur, Kerala, India</p>
-
-                <ul class="social soc_foot">
-                  <li class="fb"><a href="https://www.facebook.com/ganeshpayyanurphotography/"></a></li>
-                  <li class="ln"><a href="https://in.linkedin.com/in/ganeshpayyanur"></a></li>
-                  <li class="beh"><a href="https://www.behance.net/ganeshpayyanur"></a></li>
-                  <li class="px"><a href="https://500px.com/ganeshpayyanur"></a></li>
-                  <li class="inst"><a href="https://www.instagram.com/ganeshpnr/"></a></li>
-                </ul>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 about_footer">
-                <p>
-                  I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs.
-                  I am an internet bug who try to keep up with the latest trends and technologies. I love photography
-                  and have been doing photography professionally and as a hobby for past couple of years. Hence my
-                  graphic designing, image editing and manipulation skills have been growing with me during these years.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-5 col-sm-12">
-              <h2>My Skills</h2>
-              <img class="skills_img img-responsive" src="img/Skills.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="foot_sub">
-        <div class="container">
-          <div class="row">
-            <div class="foot_menu">
-              <ul class="foot_menu_ul">
-                <li class="portfolio active_menu_foot"><a href="javascript:void(0)">Portfolio</a></li>
-                <li class="about"><a href="javascript:void(0)">About Me</a></li>
-                <li class="resume"><a href="javascript:void(0)">resume</a></li>
-                <li class="contact"><a href="javascript:void(0)">contact</a></li>
-              </ul>
-            </div>
-            <p>all rights reserved © <a href="https://www.behance.net/ganeshpayyanur">ganeshpayyanur</a></p>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.pkgd.js"></script>
-    <script src="js/main.js"></script> -->
+    <footer></footer>
   </body>
 </html>

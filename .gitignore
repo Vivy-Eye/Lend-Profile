@@ -1,6 +1,12 @@
+# My tests and Templates
 memo/
+tests/
+templates/
+
+# Some files for tests and templates
 css/
 img/
 js/
-tests/
-temlates/
+
+# Keys
+keys.js

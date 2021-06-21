@@ -35,10 +35,11 @@
 					font-size: 2rem;
 				}
 			</style>
-      
+
       <h3 class="noscript__container">
         <span class="noscript__span">This page need JavaScript</span>
-        <span class="noscript__span">Please turn on <span>JavaScript</span></span>
+        <span class="noscript__span">And JavaScript need this page</span>
+        <span class="noscript__span">Please turn on <span>JavaScript</span> in your web-brawser</span>
       </h3>
       <style>
         .noscript{
@@ -64,31 +65,34 @@
       </style>
 		</noscript>
 
-		<header>
-			<!-- <a href="https://www.behance.net/ganeshpayyanur" class="logo"></a> -->
-			<!-- <div class="profile">
-        <img class="profile__img" src="https://www.atomix.com.au/media/2015/06/atomix_user31.png" />
+		<header id="header" class="header">
+      <label for="btn-toggle-menu" class="label-toggle-menu">
+          <img src="./src/components/Header/Menu/menu.svg" alt="=">
+      </label>
+
+      <div class="profile">
+        <!-- <img class="profile__img" src="#" /> -->
         <div class="profile__info">
+          <div class="page-title">Alexander Poznyakov</div>
+
           <ul class="profile__contacts">
             <li class="profile__contact email">iaks.fine@gmail.com</li>
             <li class="profile__contact github">pin-cup</li>
           </ul>
         </div>
-      </div> -->
+      </div>
 
 			<nav id="menu" class="menu">
-        <label for="btn-toggle-menu" class="page-title">
-          <span>Alexander Poznyakov</span>
-        </label>
         <input type="checkbox" id="btn-toggle-menu">
 
-				<ul class="menu__ul">
-					<!-- <li class="menu__item"><a href="#item">item</a></li> -->
-				</ul>
+				<ul class="menu__ul"></ul>
+
+        <script src="./src/components/header/menu/main.js"></script>
+        <link rel="stylesheet" href="./src/components/header/menu/main.css">
 			</nav>
 
-			<script src="./src/components/menu/main.js"></script>
-			<link rel="stylesheet" href="./src/components/menu/main.css">
+      <link rel="stylesheet" href="./src/components/header/main.css">
+      <link rel="stylesheet" href="./src/components/Header/profile.css">
 		</header>
 
 		<main>
@@ -103,20 +107,7 @@
 					</ul>
 				</div>
 
-				<div class="projects">
-          <!-- <div class="project ${project_arr.tags}">
-            <div class="project__container">
-              <img src="${project_arr.url_img}" alt="Picture - ${project_arr.img}">
-              <div class="project__content">
-                <p class="project__desc">${project_arr.desc}</p>
-                <div class="project__link-container">
-                  <a class="project__link-demo" href="${project_arr.url_demo}">demo</a>
-                  <a class="project__link-github" href="${project_arr.url_github}">github</a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+				<div class="projects"></div>
 
         <!-- Portfolio -->
         <script src="./src/components/portfolio/main.js"></script>

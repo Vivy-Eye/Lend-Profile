@@ -29,10 +29,10 @@
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out;
 }
-.project__cube-front,
+/* .project__cube-front,
 .project__cube-top{
   border: 2px solid black;
-}
+} */
 .project__cube-front,
 .project__img {
   max-height: 100%;

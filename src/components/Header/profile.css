@@ -1,0 +1,36 @@
+/* ## Profile */
+.page-title{
+  /* padding: 1rem; */
+  /* border-radius: 1px; */
+
+  /* color:rgb(235, 235, 235);
+  background-color: rgb(63, 63, 63);
+  box-shadow: 0 0 0 4px rgb(82, 82, 82),
+  0 0 0 8px rgb(104, 104, 104),
+  0 0 0 12px rgb(168, 168, 168); */
+
+  /* color:black; */
+  /* background-color: chartreuse; */
+  /* box-shadow: 0 0 0 2px rgb(150, 255, 45), */
+  /* 0 0 0 4px rgb(174, 255, 92), */
+  /* 0 0 0 6px rgb(193, 255, 131), */
+  /* 0 0 0 8px rgb(211, 255, 166), */
+  /* 0 0 0 10px rgb(224, 255, 190); */
+
+  /* transition: box-shadow ease-in-out 3s; */
+
+  /* > Some new version < */
+  padding: 1rem 0;
+  font-size: 1.5rem;
+
+  user-select: none;
+}
+
+.profile__contact.email::before{
+  content: "Email - ";
+  color: rgb(206, 206, 206);
+}
+.profile__contact.github::before{
+  content: "Github - ";
+  color: rgb(206, 206, 206);
+}

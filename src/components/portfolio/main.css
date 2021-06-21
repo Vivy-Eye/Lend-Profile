@@ -1,0 +1,24 @@
+/* ### Portfolio */
+
+/* ## Filters */
+.filters{
+  padding: .5rem 0;
+}
+.filters__list{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.filter__button{
+  height: 2.5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  font-size: .8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #00000000;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Alexander | RESUME</title>
+    <meta name="description" content="I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="img/Logo_hover.png" />
+    <link rel="stylesheet" href="./src/index.css">
+  </head>
+  <body>
+		<noscript class="noscript">
+			<!-- <h2 class="noscript__title">This page need JavaScript</h2> -->
+			<!-- <p class="noscript__desc">Please turn on <span>JavaScript</span>.</p> -->
+			<style>
+				.noscript{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+					background-color: aliceblue;
+					color: coral;
+          text-shadow: 0px 1px 1px black;
+					font-family: 'Times New Roman', Times, serif;
+				}
+				.noscript__title{
+          text-align: center;
+					padding: 1rem;
+					font-size: 3rem;
+				}
+				.noscript__desc{
+					padding: 2vh;
+					font-size: 2rem;
+				}
+			</style>
+
+      <h3 class="noscript__container">
+        <span class="noscript__span">This page need JavaScript</span>
+        <span class="noscript__span">And JavaScript need this page</span>
+        <span class="noscript__span">Please turn on <span>JavaScript</span> in your web-brawser</span>
+      </h3>
+      <style>
+        .noscript{
+          background-color: #ece5da;
+          text-align: center;
+        }
+        .noscript__container{
+          /* margin: 20px; */
+          font-family: "Paytone One";
+          color: #202020;
+          text-transform: uppercase;
+          letter-spacing: -2px;
+        }
+        .noscript__span{
+          display: block;
+          margin: 11px 0 17px 0;
+          font-size: 2.2rem;
+          line-height: 80px;
+          color: #f1ebe5;
+          text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+          letter-spacing: -4px;
+        }
+      </style>
+		</noscript>
+
+		<header id="header" class="header">
+      <label for="btn-toggle-menu" class="label-toggle-menu">
+          <img src="./src/components/Header/Menu/menu.svg" alt="=">
+      </label>
+
+      <div class="profile">
+        <!-- <img class="profile__img" src="#" /> -->
+        <div class="profile__info">
+          <div class="page-title">Alexander Poznyakov</div>
+
+          <ul class="profile__contacts">
+            <li class="profile__contact email">iaks.fine@gmail.com</li>
+            <li class="profile__contact github">pin-cup</li>
+          </ul>
+        </div>
+      </div>
+
+			<nav id="menu" class="menu">
+        <input type="checkbox" id="btn-toggle-menu">
+
+				<ul class="menu__ul"></ul>
+
+        <script src="./src/components/header/menu/main.js"></script>
+        <link rel="stylesheet" href="./src/components/header/menu/main.css">
+			</nav>
+
+      <link rel="stylesheet" href="./src/components/header/main.css">
+      <link rel="stylesheet" href="./src/components/Header/profile.css">
+		</header>
+
+		<main>
+			<div id="portfolio" class="portfolio">
+				<div class="filters">
+					<ul class="filters__list">
+						<li><a class="filter__button" href="#portfolio" filter-attribute="*">All</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".javascript">JavaScript</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".python">Python</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".bot">Bot</a></li>
+						<li><a class="filter__button" href="#portfolio" filter-attribute=".spa">SPA</a></li>
+					</ul>
+				</div>
+
+				<div class="projects"></div>
+
+        <!-- Portfolio -->
+        <script src="./src/components/portfolio/main.js"></script>
+        <link rel="stylesheet" href="./src/components/portfolio/main.css">
+        <!-- Projects -->
+        <script src="./src/components/portfolio/projects/main.js"></script>
+        <link rel="stylesheet" href="./src/components/portfolio/projects/main.css">
+			</div>
+
+      #resum
+		</main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -4,37 +4,40 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Alexander | RESUME</title>
-    <meta name="description" content="I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs"/>
+    <meta
+      name="description"
+      content="I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" href="img/Logo_hover.png" />
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="shortcut icon" href="./src/icon.svg" />
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-		<noscript class="noscript">
-			<!-- <h2 class="noscript__title">This page need JavaScript</h2> -->
-			<!-- <p class="noscript__desc">Please turn on <span>JavaScript</span>.</p> -->
-			<style>
-				.noscript{
+    <noscript class="noscript">
+      <!-- <h2 class="noscript__title">This page need JavaScript</h2> -->
+      <!-- <p class="noscript__desc">Please turn on <span>JavaScript</span>.</p> -->
+      <style>
+        .noscript {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           align-items: center;
-					background-color: aliceblue;
-					color: coral;
+          background-color: aliceblue;
+          color: coral;
           text-shadow: 0px 1px 1px black;
-					font-family: 'Times New Roman', Times, serif;
-				}
-				.noscript__title{
+          font-family: "Times New Roman", Times, serif;
+        }
+        .noscript__title {
           text-align: center;
-					padding: 1rem;
-					font-size: 3rem;
-				}
-				.noscript__desc{
-					padding: 2vh;
-					font-size: 2rem;
-				}
-			</style>
+          padding: 1rem;
+          font-size: 3rem;
+        }
+        .noscript__desc {
+          padding: 2vh;
+          font-size: 2rem;
+        }
+      </style>
 
       <h3 class="noscript__container">
         <span class="noscript__span">This page need JavaScript</span>
@@ -42,32 +45,34 @@
         <span class="noscript__span">Please turn on <span>JavaScript</span> in your web-brawser</span>
       </h3>
       <style>
-        .noscript{
+        .noscript {
           background-color: #ece5da;
           text-align: center;
         }
-        .noscript__container{
+        .noscript__container {
           /* margin: 20px; */
           font-family: "Paytone One";
           color: #202020;
           text-transform: uppercase;
           letter-spacing: -2px;
         }
-        .noscript__span{
+        .noscript__span {
           display: block;
           margin: 11px 0 17px 0;
           font-size: 2.2rem;
           line-height: 80px;
           color: #f1ebe5;
-          text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+          text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
           letter-spacing: -4px;
         }
       </style>
-		</noscript>
+    </noscript>
 
-		<header id="header" class="header">
+    <div id="memory-cub" class="memory-cub"></div>
+
+    <header id="header" class="header">
       <label for="btn-toggle-menu" class="label-toggle-menu">
-          <img src="./src/components/Header/Menu/menu.svg" alt="=">
+        <img src="./src/components/Header/Menu/menu.svg" alt="=" />
       </label>
 
       <div class="profile">
@@ -82,44 +87,137 @@
         </div>
       </div>
 
-			<nav id="menu" class="menu">
-        <input type="checkbox" id="btn-toggle-menu">
+      <nav id="menu" class="menu">
+        <!-- <label for="btn-toggle-menu" class="label-toggle-menu">
+          <img src="./src/components/Header/Menu/menu.svg" alt="=">
+        </label> -->
 
-				<ul class="menu__ul"></ul>
+        <input type="checkbox" id="btn-toggle-menu" />
+
+        <ul class="menu__ul"></ul>
 
         <script src="./src/components/Header/Menu/main.js"></script>
-        <link rel="stylesheet" href="./src/components/Header/Menu/main.css">
-			</nav>
+        <link rel="stylesheet" href="./src/components/Header/Menu/main.css" />
+      </nav>
 
-      <link rel="stylesheet" href="./src/components/Header/main.css">
-      <link rel="stylesheet" href="./src/components/Header/profile.css">
-		</header>
+      <link rel="stylesheet" href="./src/components/Header/main.css" />
+      <link rel="stylesheet" href="./src/components/Header/profile/profile.css" />
+    </header>
 
-		<main>
-			<div id="portfolio" class="portfolio">
-				<div class="filters">
-					<ul class="filters__list">
-						<li><a class="filter__button" href="#portfolio" filter-attribute="*">All</a></li>
-						<li><a class="filter__button" href="#portfolio" filter-attribute=".javascript">JavaScript</a></li>
-						<li><a class="filter__button" href="#portfolio" filter-attribute=".python">Python</a></li>
-						<li><a class="filter__button" href="#portfolio" filter-attribute=".bot">Bot</a></li>
-						<li><a class="filter__button" href="#portfolio" filter-attribute=".spa">SPA</a></li>
-					</ul>
-				</div>
+    <main>
+      <div id="portfolio" class="portfolio">
+        <div class="filters">
+          <ul class="filters__list">
+            <li><a class="filter__button" href="#portfolio" filter-attribute="*">All</a></li>
+            <li><a class="filter__button" href="#portfolio" filter-attribute=".javascript">JavaScript</a></li>
+            <li><a class="filter__button" href="#portfolio" filter-attribute=".python">Python</a></li>
+            <li><a class="filter__button" href="#portfolio" filter-attribute=".bot">Bot</a></li>
+            <li><a class="filter__button" href="#portfolio" filter-attribute=".spa">SPA</a></li>
+          </ul>
+        </div>
 
-				<div class="projects"></div>
+        <div class="projects"></div>
 
         <!-- Portfolio -->
         <script src="./src/components/Portfolio/main.js"></script>
-        <link rel="stylesheet" href="./src/components/Portfolio/main.css">
+        <link rel="stylesheet" href="./src/components/Portfolio/main.css" />
         <!-- Projects -->
         <script src="./src/components/Portfolio/projects/main.js"></script>
-        <link rel="stylesheet" href="./src/components/Portfolio/projects/main.css">
-			</div>
+        <link rel="stylesheet" href="./src/components/Portfolio/projects/main.css" />
+      </div>
 
-      #resum
-		</main>
+      <div id="personal" class="personal">
+        <div class="skills">
+          <h2 class="skills__title">My skills</h2>
+          <script src="./src/components/Personal/skills/main.js"></script>
+          <!-- <link rel="stylesheet" href="./src/components/Skills/main.css" /> -->
+        </div>
 
-    <footer></footer>
+        <div class="experience">
+          <h2 class="experience__title">Work Experience</h2>
+
+          <div class="work-ex">
+            <h4 class="work-ex__title"><b>Front End Developer</b></h4>
+
+            <h5 class="work-ex__sub-title">
+              Jan 2015
+              <span class="work-ex__current">Current</span>
+            </h5>
+
+            <p class="work-ex__text">
+              Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
+              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+            </p>
+          </div>
+          <!-- <div class="work-ex">
+          <h4 class="work-ex__title"><b>Front End Developer</b></h4>
+          <h5 class="work-ex__sub-title">
+            Jan 2015 -
+            <span class="work-ex__current">Current</span>
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt
+            hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+          </p>
+        </div> -->
+
+          <!-- <link rel="stylesheet" href="./src/components/Experience/main.css" /> -->
+        </div>
+
+        <div class="education">
+          <h2 class="education__title">Education</h2>
+
+          <div class="education-ex">
+            <h4 class="education-ex__title"><b>Front End Developer</b></h4>
+
+            <h5 class="education-ex__sub-title">Jan 2015</h5>
+
+            <p class="education-ex__text">
+              Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
+              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+            </p>
+          </div>
+
+          <!-- <link rel="stylesheet" href="./src/components/Education/main.css" /> -->
+        </div>
+
+        <div class="about">
+          <h2 class="about__title">About me</h2>
+
+          <p class="about__text">
+            I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs. I am
+            an internet bug who try to keep up with the latest trends and technologies. I love photography and have been
+            doing photography professionally and as a hobby for past couple of years. Hence my graphic designing, image
+            editing and manipulation skills have been growing with me during these years.
+          </p>
+
+          <!-- <link rel="stylesheet" href="./src/components/About/main.css" /> -->
+        </div>
+
+        <link rel="stylesheet" href="./src/components/Personal/main.css">
+      </div>
+
+      <div id="social" class="social">
+        <ul class="social__ul">
+          <li class="social__li">
+            <a class="social__link" href="https://www.facebook.com/ganeshpayyanurphotography/"
+              ><i class="social__icon"></i
+            ></a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://in.linkedin.com/in/ganeshpayyanur"><i class="social__icon"></i></a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://www.behance.net/ganeshpayyanur"><i class="social__icon"></i></a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://500px.com/ganeshpayyanur"><i class="social__icon"></i></a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://www.instagram.com/ganeshpnr/"><i class="social__icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>

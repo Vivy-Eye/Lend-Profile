@@ -14,6 +14,60 @@
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
+    <!-- <div class="redirect-lang">
+      <h3 class="redirect-lang__title redirect-lang-ru">
+        <a class="redirect-lang__link" href="./ru.html">> Сайт на русском <</a>
+      </h3>
+      <style>
+        .redirect-lang {
+          opacity: 0.2;
+          cursor: pointer;
+          position: fixed;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 0;
+        }
+        .redirect-lang__title {
+          font-family: "Paytone One";
+          color: #202020;
+          text-transform: uppercase;
+          letter-spacing: -2px;
+        }
+        .redirect-lang__link {
+          background-color: orange;
+          text-align: center;
+          height: 2rem;
+          text-decoration: none;
+          display: block;
+          margin: 0.5rem 0;
+          font-size: 1rem;
+          padding: 0.5rem 0;
+          color: #ffffff;
+          letter-spacing: -1px;
+        }
+        @keyframes show-redirect-lang {
+          from {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+          }
+        }
+        .redirect-lang {
+          animation-name: show-redirect-lang;
+          animation-duration: 2s;
+          animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+          animation-iteration-count: 1;
+          animation-direction: normal;
+        }
+        .redirect-lang:hover {
+          animation-play-state: paused;
+        }
+      </style>
+    </div> -->
+
     <noscript class="noscript">
       <!-- <h2 class="noscript__title">This page need JavaScript</h2> -->
       <!-- <p class="noscript__desc">Please turn on <span>JavaScript</span>.</p> -->
@@ -68,7 +122,7 @@
       </style>
     </noscript>
 
-    <div id="memory-cub" class="memory-cub"></div>
+    <!-- <div id="memory-cub" class="memory-cub"></div> -->
 
     <header id="header" class="header">
       <label for="btn-toggle-menu" class="label-toggle-menu">
@@ -105,6 +159,40 @@
     </header>
 
     <main>
+      <!-- <div id="contact" class="contact">
+        <div class="social">
+          <ul class="social__ul">
+            <li class="social__li">
+              <a class="social__link" href=""><i class="social__icon"></i></a>
+                
+                <div class="social__cube-wrapper">
+                  <div class="social__cube">
+                    <div class="social__cube-top"></div>
+                    <div class="social__cube-front"></div>
+                  </div>
+                </div>
+
+            </li>
+
+            <li class="social__li">
+              <a class="social__link" href=""><i class="social__icon"></i></a>
+            </li>
+
+            <li class="social__li">
+              <a class="social__link" href=""><i class="social__icon"></i></a>
+            </li>
+
+            <li class="social__li">
+              <a class="social__link" href=""><i class="social__icon"></i></a>
+            </li>
+
+            <li class="social__li">
+              <a class="social__link" href=""><i class="social__icon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
       <div id="portfolio" class="portfolio">
         <div class="filters">
           <ul class="filters__list">
@@ -127,96 +215,45 @@
       </div>
 
       <div id="personal" class="personal">
-        <div class="skills">
+        <section id="skills" class="skills">
           <h2 class="skills__title">My skills</h2>
           <script src="./src/components/Personal/skills/main.js"></script>
-          <!-- <link rel="stylesheet" href="./src/components/Skills/main.css" /> -->
-        </div>
+          <link rel="stylesheet" href="./src/components/Personal/skills/main.css" />
+        </section>
 
-        <div class="experience">
+        <!-- <section id="experience" class="experience">
           <h2 class="experience__title">Work Experience</h2>
-
           <div class="work-ex">
             <h4 class="work-ex__title"><b>Front End Developer</b></h4>
-
             <h5 class="work-ex__sub-title">
               Jan 2015
               <span class="work-ex__current">Current</span>
             </h5>
-
             <p class="work-ex__text">
               Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
               sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
             </p>
           </div>
-          <!-- <div class="work-ex">
-          <h4 class="work-ex__title"><b>Front End Developer</b></h4>
-          <h5 class="work-ex__sub-title">
-            Jan 2015 -
-            <span class="work-ex__current">Current</span>
-          </h5>
-          <p>
-            Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt
-            hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
-          </p>
-        </div> -->
+        </section> -->
 
-          <!-- <link rel="stylesheet" href="./src/components/Experience/main.css" /> -->
-        </div>
-
-        <div class="education">
+        <!-- <section id="education" class="education">
           <h2 class="education__title">Education</h2>
-
           <div class="education-ex">
             <h4 class="education-ex__title"><b>Front End Developer</b></h4>
-
             <h5 class="education-ex__sub-title">Jan 2015</h5>
-
             <p class="education-ex__text">
               Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
               sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
             </p>
           </div>
+        </section> -->
 
-          <!-- <link rel="stylesheet" href="./src/components/Education/main.css" /> -->
-        </div>
-
-        <div class="about">
+        <section id="about" class="about">
           <h2 class="about__title">About me</h2>
+          <script src="./src/components/Personal/about.js"></script>
+        </section>
 
-          <p class="about__text">
-            I a am front end UI designer and developer with a strong eye for creative, modern and trendy designs. I am
-            an internet bug who try to keep up with the latest trends and technologies. I love photography and have been
-            doing photography professionally and as a hobby for past couple of years. Hence my graphic designing, image
-            editing and manipulation skills have been growing with me during these years.
-          </p>
-
-          <!-- <link rel="stylesheet" href="./src/components/About/main.css" /> -->
-        </div>
-
-        <link rel="stylesheet" href="./src/components/Personal/main.css">
-      </div>
-
-      <div id="social" class="social">
-        <ul class="social__ul">
-          <li class="social__li">
-            <a class="social__link" href="https://www.facebook.com/ganeshpayyanurphotography/"
-              ><i class="social__icon"></i
-            ></a>
-          </li>
-          <li class="social__li">
-            <a class="social__link" href="https://in.linkedin.com/in/ganeshpayyanur"><i class="social__icon"></i></a>
-          </li>
-          <li class="social__li">
-            <a class="social__link" href="https://www.behance.net/ganeshpayyanur"><i class="social__icon"></i></a>
-          </li>
-          <li class="social__li">
-            <a class="social__link" href="https://500px.com/ganeshpayyanur"><i class="social__icon"></i></a>
-          </li>
-          <li class="social__li">
-            <a class="social__link" href="https://www.instagram.com/ganeshpnr/"><i class="social__icon"></i></a>
-          </li>
-        </ul>
+        <link rel="stylesheet" href="./src/components/Personal/main.css" />
       </div>
     </main>
   </body>

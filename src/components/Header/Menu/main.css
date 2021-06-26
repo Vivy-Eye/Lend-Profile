@@ -1,16 +1,16 @@
 /* ### MENU */
-.menu{
+.menu {
   /* border: 1px solid rgb(223, 223, 223); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.menu__ul{
+.menu__ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.menu__item-link{
+.menu__item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,12 +20,7 @@
   color: black;
   font-size: 1.2rem;
   /* letter-spacing: -.03rem; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   text-transform: uppercase;
-  border: solid #e9dcdc00;
-  border-width: 1px 0;
-}
-.menu__item-link:hover{
-  border-color: chartreuse;
 }

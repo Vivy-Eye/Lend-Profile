@@ -14,7 +14,7 @@
 }
 
 /* !!! ~ Експерементально ~ !!! */
-.skills__title,
+/* .skills__title,
 .experience__title,
 .education__title,
 .about__title{
@@ -28,29 +28,29 @@
   background-size:cover;
 
   border-radius: 5px;
-}
+} */
 
 .skills__title::before,
 .experience__title::before,
 .education__title::before,
 .about__title::before {
-  content: ">";
-  position: absolute;
-  left: 1.5rem;
+  content: "- ";
+  /* position: absolute;
+  left: 1.5rem; */
   color: #999999;
 }
 .skills__title::after,
 .experience__title::after,
 .education__title::after,
 .about__title::after {
-  content: ":";
+  content: " -";
   color: #999999;
 }
 .skills__title,
 .experience__title,
 .education__title,
 .about__title {
-  /* text-align: center; */
+  text-align: center;
   font-size: 2rem;
   padding: 3rem 0;
 }

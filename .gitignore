@@ -2,11 +2,3 @@
 memo/
 tests/
 templates/
-
-# Some files for tests and templates
-css/
-img/
-js/
-
-# Keys
-keys.js

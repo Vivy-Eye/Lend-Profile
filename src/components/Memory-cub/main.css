@@ -1,0 +1,83 @@
+/* ### Memory-Cub */
+
+.memory-cub{
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-cub__side,
+.memory-cub__container {
+  width: 10em;
+  height: 10em;
+}
+
+.memory-cub__container {
+  /* border: 2px dotted white; */
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+.memory-cub__container:before,
+.memory-cub__container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  /* border: 2px dotted white; */
+}
+.memory-cub__container:before {
+  transform: rotateX(90deg);
+}
+.memory-cub__container:after {
+  transform: rotatey(90deg);
+}
+
+.m-cub__side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border: 2px solid white;
+  opacity: 0.9;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-cub__side img {
+  min-width: 100%;
+  height: 100%;
+}
+
+.m-cub__back {
+  transform: translateZ(-5em);
+  background: orange;
+}
+.m-cub__left {
+  transform: translateX(-5em) rotateY(90deg);
+  background: lightgreen;
+}
+.m-cub__right {
+  transform: translateX(5em) rotateY(90deg);
+  background: yellowgreen;
+}
+.m-cub__top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: skyblue;
+}
+.m-cub__bottom {
+  transform: translateY(5em) rotateX(90deg);
+  background: steelblue;
+}
+.m-cub__front {
+  transform: translateZ(5em);
+  background: gold;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

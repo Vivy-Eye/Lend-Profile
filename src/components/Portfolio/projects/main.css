@@ -104,3 +104,15 @@
     margin: 1rem;
   }
 }
+
+/*---------------
+    Media > 720
+---------------*/
+
+@media screen and (min-width: 720px) {
+  .project {
+    height: 16rem;
+    width: 30rem;
+    margin: 3rem 1.6rem;
+  }
+}

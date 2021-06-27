@@ -41,6 +41,7 @@
 
 @media screen and (min-width: 540px) {
   .profile{
+    min-width: 30%;
     padding: 1.5rem;
   }
 }

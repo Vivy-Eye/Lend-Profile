@@ -38,9 +38,53 @@
   display: flex;
 }
 
-/*
-  Залипание в род блоке с прокруткой
-  position: sticky;
-    top: 0;
-    left: 0;
-*/
+/*---------------
+    Media > 540
+---------------*/
+
+@media screen and (min-width: 540px) {
+  .header {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.753);
+  }
+  .profile {
+    width: auto;
+  }
+
+  /* ## Toggle menu and Title */
+  .label-toggle-menu,
+  #btn-toggle-menu {
+    display: none;
+  }
+  .menu__ul{
+    display: flex;
+  }
+}
+
+/*---------------
+    Media > 720
+---------------*/
+
+@media screen and (min-width: 720px) {}
+
+/*---------------
+    Media > 960
+---------------*/
+
+@media screen and (min-width: 960px) {}
+
+/*---------------
+    Media > 1140
+---------------*/
+
+@media screen and (min-width: 1140px) {}
+
+/*---------------
+    Media > 1320
+---------------*/
+
+@media screen and (min-width: 1320px) {}
+

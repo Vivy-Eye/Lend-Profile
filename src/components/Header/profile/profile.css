@@ -1,5 +1,5 @@
 /* ## Profile */
-.page-title{
+.page-title {
   /* padding: 1rem; */
   /* border-radius: 1px; */
 
@@ -26,11 +26,21 @@
   user-select: none;
 }
 
-.profile__contact.email::before{
+.profile__contact.email::before {
   content: "Email - ";
   color: rgb(206, 206, 206);
 }
-.profile__contact.github::before{
+.profile__contact.github::before {
   content: "Github - ";
   color: rgb(206, 206, 206);
+}
+
+/*---------------
+    Media > 540
+---------------*/
+
+@media screen and (min-width: 540px) {
+  .profile{
+    padding: 1.5rem;
+  }
 }

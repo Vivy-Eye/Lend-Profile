@@ -64,11 +64,11 @@
 
   font-size: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  
-  word-spacing: .2rem;
-  letter-spacing: .05rem;
 
-  word-break:normal;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.05rem;
+
+  word-break: normal;
   line-break: strict;
   hyphens: auto;
 
@@ -93,4 +93,14 @@
 
 .project__cube-wrapper:hover .project__cube {
   transform: translate(0, 50%) rotateX(-90deg);
+}
+
+/*---------------
+    Media > 540
+---------------*/
+
+@media screen and (min-width: 540px) {
+  .project {
+    margin: 1rem;
+  }
 }

@@ -54,7 +54,7 @@
 
 .m-cub__back {
   transform: translateZ(-5em);
-  background: orange;
+  /* background: orange; */
 }
 .m-cub__left {
   transform: translateX(-5em) rotateY(90deg);

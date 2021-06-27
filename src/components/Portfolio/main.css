@@ -1,21 +1,21 @@
 /* ### Portfolio */
 
 /* ## Filters */
-.filters{
-  padding: .5rem 0;
+.filters {
+  padding: 0.5rem 0;
   background-color: white;
-  
+
   position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
 }
-.filters__list{
+.filters__list {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.filter__button{
+.filter__button {
   height: 2.5rem;
   padding: 0 1rem;
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
 
   color: black;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 1px solid #00000000;

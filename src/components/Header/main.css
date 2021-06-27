@@ -1,40 +1,46 @@
 /* ### Header */
-.header{
+.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-shrink: 2;
-
   box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.753);
 }
 
 /* Space balance in top of header before menu*/
 /* Label button menu button */
-.label-toggle-menu{
+.label-toggle-menu {
   width: 30%;
   padding: 2rem;
 }
 /* Mini profile block with contact info */
-.profile{
+.profile {
   width: 70%;
 }
 
 /* ## Toggle menu and Title */
-.label-toggle-menu{
+.label-toggle-menu {
   cursor: pointer;
   user-select: none;
   font-size: 5rem;
 }
-.label-toggle-menu img{
+.label-toggle-menu img {
   width: 3rem;
 }
 
 #btn-toggle-menu,
-.menu__ul{
+.menu__ul {
   display: none;
 }
 #btn-toggle-menu:checked + .menu__ul {
   display: flex;
 }
+
+/*
+  Залипание в род блоке с прокруткой
+  position: sticky;
+    top: 0;
+    left: 0;
+*/

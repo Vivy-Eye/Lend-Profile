@@ -9,7 +9,10 @@ const Menu_ul = Menu.querySelector(".menu__ul");
     "beforeend",
     `
     <li class="menu__item">
-      <a class="menu__item-link" href="#${menu_itemText}">${menu_itemText}</a>
+      <a
+        class="menu__item-link"
+        href="#${menu_itemText}"
+      >${menu_itemText}</a>
     </li>`
   )
 );

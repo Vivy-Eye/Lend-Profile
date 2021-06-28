@@ -76,9 +76,21 @@ const Skills = document.querySelector(".skills");
     "beforeend",
     `
     <div class="skill ${skill.name}">
+      
       <p class="skill__name">${skill.name}</p>
-      <meter class="skill__meter" min="0" low=".30" high=".60" optimum=".80" max="1" value="${skill.value}"></meter>
-      <div class="skill__value"><i>${(skill.value * 100).toFixed(1)}</i></div>
+      <meter
+        class="skill__meter"
+        min="0"
+        low=".30"
+        high=".60"
+        optimum=".80"
+        max="1"
+        value="${skill.value}"
+      ></meter>
+      <div class="skill__value">
+        <i>${(skill.value * 100).toFixed(1)}</i>
+      </div>
+
     </div>
     `
   )

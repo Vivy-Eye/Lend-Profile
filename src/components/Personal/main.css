@@ -15,23 +15,6 @@
   padding: 3rem;
 }
 
-/* !!! ~ Експерементально ~ !!! */
-/* .skills__title,
-.experience__title,
-.education__title,
-.about__title{
-  color: aliceblue;
-  text-align: center;
-  background-image: url("./skills/IMG_6025.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-clip: border-box;
-  background-size:cover;
-
-  border-radius: 5px;
-} */
-
 .skills__title::before,
 .experience__title::before,
 .education__title::before,

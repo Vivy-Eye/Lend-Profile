@@ -90,18 +90,6 @@
   }
 }
 
-/* .memory-cub__container:hover .m-cub__side,
-.memory-cub__container:hover .memory-cub__container:before,
-.memory-cub__container:hover .memory-cub__container:after,
-.memory-cub__container:hover .m-cub__side,
-.memory-cub__container:hover .m-cub__side{
-  width: 8rem;
-  height: 8rem;
-} */
-
-/* .memory-cub__container:hover{
-  animation-play-state: paused;
-} */
 .memory-cub__container:hover .m-cub__side,
 .memory-cub__container:hover .memory-cub__container {
   width: 9rem;

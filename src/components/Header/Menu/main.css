@@ -26,7 +26,8 @@
 
 .menu__item-link:hover {
   color: white;
-  box-shadow: inset 15rem 0px 0px rgb(56, 56, 56), inset -15rem 0px 0px rgb(56, 56, 56);
+  box-shadow: inset 15rem 0px 0px rgb(56, 56, 56),
+              inset -15rem 0px 0px rgb(56, 56, 56);
 }
 
 /*---------------

@@ -1,5 +1,7 @@
-/* ### Memory-Cub */
 
+/*--------------
+    MEMORY-CUB
+--------------*/
 .memory-cub{
   height: 18rem;
   min-width: 18rem;
@@ -12,6 +14,9 @@
 .memory-cub__container {
   width: 10em;
   height: 10em;
+
+  transition: width ease-in-out 1s,
+  height ease-in-out 1s;;
 }
 
 .memory-cub__container {
@@ -55,6 +60,7 @@
 .m-cub__back {
   transform: translateZ(-5em);
   /* background: orange; */
+  background-color: teal;
 }
 .m-cub__left {
   transform: translateX(-5em) rotateY(90deg);
@@ -81,4 +87,22 @@
   100% {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
+}
+
+/* .memory-cub__container:hover .m-cub__side,
+.memory-cub__container:hover .memory-cub__container:before,
+.memory-cub__container:hover .memory-cub__container:after,
+.memory-cub__container:hover .m-cub__side,
+.memory-cub__container:hover .m-cub__side{
+  width: 8rem;
+  height: 8rem;
+} */
+
+/* .memory-cub__container:hover{
+  animation-play-state: paused;
+} */
+.memory-cub__container:hover .m-cub__side,
+.memory-cub__container:hover .memory-cub__container{
+  width: 9rem;
+  height: 9rem;
 }

@@ -1,26 +1,42 @@
-/* ### MENU */
-.menu {
-  /* border: 1px solid rgb(223, 223, 223); */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+/*--------------
+      MENU
+--------------*/
 .menu__ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .menu__item-link {
+  height: 3rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  width: 10rem;
 
-  color: black;
   font-size: 1.2rem;
-  /* letter-spacing: -.03rem; */
   font-family: "Courier New", Courier, monospace;
+  color: black;
+  letter-spacing: 0.05rem;
   text-decoration: none;
   text-transform: uppercase;
+
+  transition: box-shadow 0.65s ease-in-out, color 0.65s ease-in-out, opacity 0.65s ease-in;
+}
+
+.menu__item-link:hover {
+  color: white;
+  box-shadow: inset 15rem 0px 0px rgb(56, 56, 56), inset -15rem 0px 0px rgb(56, 56, 56);
+}
+
+/*---------------
+    Media > 540
+---------------*/
+@media screen and (min-width: 540px) {
+  .menu__ul{
+    max-width: 30rem;
+  }
+  .menu__item-link{
+    width: 10rem;
+  }
 }

@@ -1,0 +1,34 @@
+
+/*---------------
+    TOGGLE MENU
+---------------*/
+.label-toggle-menu {
+  cursor: pointer;
+  user-select: none;
+  font-size: 5rem;
+}
+.label-toggle-menu img {
+  width: 3rem;
+}
+
+#btn-toggle-menu,
+.menu__ul {
+  display: none;
+}
+#btn-toggle-menu:checked + .menu__ul {
+  display: flex;
+}
+
+/*---------------
+    Media > 540
+---------------*/
+@media screen and (min-width: 540px) {
+  /* ## Toggle menu and Title */
+  .label-toggle-menu,
+  #btn-toggle-menu {
+    display: none;
+  }
+  .menu__ul{
+    display: flex;
+  }
+}

@@ -1,25 +1,24 @@
-/* ### Projects */
+
+/*--------------
+    PROJECTS
+--------------*/
 .projects {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
-  /* background-color: rgb(46, 46, 46); */
+  padding-bottom: 2rem;
 }
 .project {
   height: 11.25rem;
   width: 20rem;
-  margin: 1.6rem 0;
+  margin-top: 3.5rem;
 }
 
 /* Cube */
 .project__cube-wrapper {
   width: 100%;
   height: 100%;
-  /* border: 2px solid black; */
-  /* border-width: 0 2px; */
-  /* box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75); */
   transform: translate(0%, 0%);
 }
 .project__cube,
@@ -30,27 +29,27 @@
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out;
 }
-/* .project__cube-front,
+
+.project__cube-front,
 .project__cube-top{
-  border: 2px solid black;
-} */
+  border: 2px solid rgb(228, 228, 228);
+}
+
 .project__cube-front,
 .project__img {
   max-height: 100%;
   height: auto;
   width: 100%;
-  /* If picture dont load- */
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* TOP */
 .project__cube-top {
   background-color: white;
   height: 100%;
   width: 100%;
   transform: translate(0, -100%) rotateX(90deg);
   transform-origin: bottom;
-
-  /* background-color: rgb(48, 48, 48); */
   background-color: #222222;
   color: aliceblue;
 }
@@ -79,13 +78,13 @@
 .project__links {
   height: 15%;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .project__link {
   padding: 0.5rem;
 }
 .project__link-demo {
-  color: red;
+  color: rgb(27, 255, 130);
 }
 .project__link-github {
   color: aliceblue;

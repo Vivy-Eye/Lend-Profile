@@ -1,47 +1,34 @@
-/* ### Header */
+
+/*--------------
+    HEADER
+--------------*/
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  flex-shrink: 2;
-  box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.753);
+  /* box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.753); */
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
 }
 
+/*--------------
+    Menu button
+--------------*/
 /* Space balance in top of header before menu*/
-/* Label button menu button */
 .label-toggle-menu {
-  width: 30%;
-  padding: 2rem;
+  width: 32%;
+  text-align: center;
 }
-/* Mini profile block with contact info */
 .profile {
-  width: 70%;
-}
-
-/* ## Toggle menu and Title */
-.label-toggle-menu {
-  cursor: pointer;
-  user-select: none;
-  font-size: 5rem;
-}
-.label-toggle-menu img {
-  width: 3rem;
-}
-
-#btn-toggle-menu,
-.menu__ul {
-  display: none;
-}
-#btn-toggle-menu:checked + .menu__ul {
-  display: flex;
+  width: 68%;
 }
 
 /*---------------
     Media > 540
 ---------------*/
-
 @media screen and (min-width: 540px) {
   .header {
     flex-wrap: nowrap;
@@ -53,38 +40,24 @@
   .profile {
     width: auto;
   }
-
-  /* ## Toggle menu and Title */
-  .label-toggle-menu,
-  #btn-toggle-menu {
-    display: none;
-  }
-  .menu__ul{
-    display: flex;
-  }
 }
 
 /*---------------
     Media > 720
 ---------------*/
-
 @media screen and (min-width: 720px) {}
 
 /*---------------
     Media > 960
 ---------------*/
-
 @media screen and (min-width: 960px) {}
 
 /*---------------
     Media > 1140
 ---------------*/
-
 @media screen and (min-width: 1140px) {}
 
 /*---------------
     Media > 1320
 ---------------*/
-
 @media screen and (min-width: 1320px) {}
-

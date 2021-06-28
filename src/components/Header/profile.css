@@ -1,0 +1,23 @@
+
+/*--------------
+    PROFILE
+--------------*/
+.profile__title {
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.profile__contact {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*---------------
+    Media > 540
+---------------*/
+@media screen and (min-width: 540px) {
+  .profile{
+    /* min-width: 20rem; */
+    padding: 1.5rem;
+  }
+}

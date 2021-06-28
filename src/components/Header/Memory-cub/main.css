@@ -1,10 +1,9 @@
-
 /*--------------
     MEMORY-CUB
 --------------*/
-.memory-cub{
+.memory-cub {
   height: 18rem;
-  min-width: 18rem;
+  width: 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +14,13 @@
   width: 10em;
   height: 10em;
 
-  transition: width ease-in-out 1s,
-  height ease-in-out 1s;;
+  transition: width ease-in-out 1s, height ease-in-out 1s;
 }
 
 .memory-cub__container {
   /* border: 2px dotted white; */
   transform-style: preserve-3d;
-  animation: rotate 10s infinite linear;
+  animation: rotate 15s infinite linear;
 }
 .memory-cub__container:before,
 .memory-cub__container:after {
@@ -45,18 +43,21 @@
   width: 10em;
   height: 10em;
   border: 2px solid white;
-  opacity: 0.80;
+  opacity: 0.8;
   overflow: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.m-cub__side:hover {
+  opacity: 1;
+}
+
 .m-cub__side img {
   min-width: 100%;
   height: 100%;
 }
-
 .m-cub__back {
   transform: translateZ(-5em);
   /* background: orange; */
@@ -102,7 +103,7 @@
   animation-play-state: paused;
 } */
 .memory-cub__container:hover .m-cub__side,
-.memory-cub__container:hover .memory-cub__container{
+.memory-cub__container:hover .memory-cub__container {
   width: 9rem;
   height: 9rem;
 }

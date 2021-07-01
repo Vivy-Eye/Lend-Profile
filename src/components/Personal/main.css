@@ -19,25 +19,23 @@
 .experience__title::before,
 .education__title::before,
 .about__title::before {
-  content: "- ";
-  /* position: absolute;
-  left: 1.5rem; */
   color: #999999;
+  content: "- ";
 }
 .skills__title::after,
 .experience__title::after,
 .education__title::after,
 .about__title::after {
-  content: " -";
   color: #999999;
+  content: " -";
 }
 .skills__title,
 .experience__title,
 .education__title,
 .about__title {
-  text-align: center;
   font-size: 2rem;
   padding: 3rem 0;
+  text-align: center;
 }
 
 .work-ex,
@@ -47,30 +45,27 @@
 
 .work-ex__title,
 .education-ex__title {
-  padding: 0.5rem 0;
-
   /* overflow-y: hidden; */
-  /* white-space: nowrap; */
   /* text-overflow: ellipsis; */
-
-  font-size: 1rem;
+  /* white-space: nowrap; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  
-  word-spacing: .2rem;
+  font-size: 1rem;
   letter-spacing: .05rem;
+  padding: 0.5rem 0;
+  word-spacing: .2rem;
 }
 
 .work-ex__sub-title,
 .education-ex__sub-title {
-  transition: all ease-in-out 1s;
   border-radius: 0 2px 2px 0;
   height: 1rem;
+  transition: all ease-in-out 1s;
   width: calc(100% - 4rem);
 }
 
 .work-ex__current::before {
-  content: " - ";
   color: #999999;
+  content: " - ";
 }
 .work-ex__current {
   font-size: 1rem;
@@ -81,8 +76,8 @@
 .education-ex__text,
 .about__text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 0.5rem 0;
   font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
 /*---------------

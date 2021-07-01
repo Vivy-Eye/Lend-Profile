@@ -3,8 +3,8 @@
     PROFILE
 --------------*/
 .profile__title {
-  padding: .5rem 0;
   font-size: 1.5rem;
+  padding: .5rem 0;
   user-select: none;
 }
 

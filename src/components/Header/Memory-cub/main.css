@@ -2,34 +2,33 @@
     MEMORY-CUB
 --------------*/
 .memory-cub {
-  height: 18rem;
-  width: 22rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 18rem;
+  justify-content: center;
+  width: 22rem;
 }
 
 .m-cub__side,
 .memory-cub__container {
-  width: 10em;
   height: 10em;
-
   transition: width ease-in-out 1s, height ease-in-out 1s;
+  width: 10em;
 }
 
 .memory-cub__container {
   /* border: 2px dotted white; */
-  transform-style: preserve-3d;
   animation: rotate 15s infinite linear;
+  transform-style: preserve-3d;
 }
 .memory-cub__container:before,
 .memory-cub__container:after {
+  /* border: 2px dotted white; */
   content: "";
   display: block;
+  height: 10em;
   position: absolute;
   width: 10em;
-  height: 10em;
-  /* border: 2px dotted white; */
 }
 .memory-cub__container:before {
   transform: rotateX(90deg);
@@ -39,49 +38,48 @@
 }
 
 .m-cub__side {
-  position: absolute;
-  width: 10em;
-  height: 10em;
+  align-items: center;
   border: 2px solid white;
+  display: flex;
+  height: 10em;
+  justify-content: center;
   opacity: 0.8;
   overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  width: 10em;
 }
 .m-cub__side:hover {
   opacity: 1;
 }
 
 .m-cub__side img {
-  min-width: 100%;
   height: 100%;
+  min-width: 100%;
 }
 .m-cub__back {
-  transform: translateZ(-5em);
   /* background: orange; */
   background-color: teal;
+  transform: translateZ(-5em);
 }
 .m-cub__left {
-  transform: translateX(-5em) rotateY(90deg);
   background: lightgreen;
+  transform: translateX(-5em) rotateY(90deg);
 }
 .m-cub__right {
-  transform: translateX(5em) rotateY(90deg);
   background: yellowgreen;
+  transform: translateX(5em) rotateY(90deg);
 }
 .m-cub__top {
-  transform: translateY(-5em) rotateX(90deg);
   background: skyblue;
+  transform: translateY(-5em) rotateX(90deg);
 }
 .m-cub__bottom {
-  transform: translateY(5em) rotateX(90deg);
   background: steelblue;
+  transform: translateY(5em) rotateX(90deg);
 }
 .m-cub__front {
-  transform: translateZ(5em);
   background: gold;
+  transform: translateZ(5em);
 }
 
 @keyframes rotate {
@@ -92,6 +90,6 @@
 
 .memory-cub__container:hover .m-cub__side,
 .memory-cub__container:hover .memory-cub__container {
-  width: 9rem;
   height: 9rem;
+  width: 9rem;
 }

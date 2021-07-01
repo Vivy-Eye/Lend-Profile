@@ -3,31 +3,31 @@
     PROJECTS
 --------------*/
 .projects {
-  display: flex;
-  justify-content: center;
   align-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 2rem;
 }
 .project {
   height: 11.25rem;
-  width: 20rem;
   margin-top: 3.5rem;
+  width: 20rem;
 }
 
 /* Cube */
 .project__cube-wrapper {
-  width: 100%;
   height: 100%;
   transform: translate(0%, 0%);
+  width: 100%;
 }
 .project__cube,
 .project__cube div {
-  width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .project__cube-front,
@@ -37,43 +37,38 @@
 
 .project__cube-front,
 .project__img {
-  max-height: 100%;
   height: auto;
-  width: 100%;
+  max-height: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 /* TOP */
 .project__cube-top {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  transform: translate(0, -100%) rotateX(90deg);
-  transform-origin: bottom;
   background-color: #222222;
   color: aliceblue;
+  height: 100%;
+  transform-origin: bottom;
+  transform: translate(0, -100%) rotateX(90deg);
+  width: 100%;
 }
 .project__desc {
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
   height: 85%;
+  overflow-y: hidden;
   padding: 1rem 1.3rem;
 
-  overflow-y: hidden;
-  /* white-space: nowrap; */
-  /* text-overflow: ellipsis; */
-
-  font-size: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  word-spacing: 0.2rem;
-  letter-spacing: 0.05rem;
-
-  word-break: normal;
-  line-break: strict;
+  font-size: 1rem;
   hyphens: auto;
-
-  text-indent: 1rem;
-  text-align: start;
+  letter-spacing: 0.05rem;
+  line-break: strict;
   text-align-last: end;
+  text-align: start;
+  text-indent: 1rem;
+  word-break: normal;
+  word-spacing: 0.2rem;
 }
 .project__links {
   height: 15%;
@@ -111,7 +106,7 @@
 @media screen and (min-width: 720px) {
   .project {
     height: 16rem;
-    width: 30rem;
     margin: 3rem 1.6rem;
+    width: 30rem;
   }
 }

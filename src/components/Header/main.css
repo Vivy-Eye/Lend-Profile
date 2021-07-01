@@ -3,12 +3,12 @@
     HEADER
 --------------*/
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-content: center;
   align-items: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 1rem 0;
 }
 
@@ -17,8 +17,8 @@
 --------------*/
 /* Space balance in top of header before menu*/
 .label-toggle-menu {
-  width: 32%;
   text-align: center;
+  width: 32%;
 }
 .profile {
   width: 68%;
@@ -29,11 +29,11 @@
 ---------------*/
 @media screen and (min-width: 540px) {
   .header {
-    flex-wrap: nowrap;
-    justify-content: center;
     align-content: center;
     align-items: center;
     box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.753);
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   .profile {
     width: auto;

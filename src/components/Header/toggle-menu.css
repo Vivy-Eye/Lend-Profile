@@ -4,8 +4,8 @@
 ---------------*/
 .label-toggle-menu {
   cursor: pointer;
-  user-select: none;
   font-size: 5rem;
+  user-select: none;
 }
 .label-toggle-menu img {
   width: 3rem;

@@ -3,25 +3,23 @@
 --------------*/
 .menu__ul {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item-link {
-  height: 3rem;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
   align-items: center;
-
-  font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
   color: black;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  height: 3rem;
+  justify-content: center;
   letter-spacing: 0.05rem;
   text-decoration: none;
   text-transform: uppercase;
-
   transition: box-shadow 0.65s ease-in-out, color 0.65s ease-in-out, opacity 0.65s ease-in;
+  width: 100vw;
 }
 
 .menu__item-link:hover {

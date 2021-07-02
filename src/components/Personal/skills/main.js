@@ -1,6 +1,5 @@
+// ## Skills
 "use strict";
-
-const Skills = document.querySelector(".skills");
 
 [
   {
@@ -72,7 +71,7 @@ const Skills = document.querySelector(".skills");
     value: 0.661,
   },
 ].forEach((skill) =>
-  Skills.insertAdjacentHTML(
+  document.querySelector(".skills").insertAdjacentHTML(
     "beforeend",
     `
     <div class="skill ${skill.name}">
@@ -80,11 +79,11 @@ const Skills = document.querySelector(".skills");
       <p class="skill__name">${skill.name}</p>
       <meter
         class="skill__meter"
-        min="0"
-        low=".30"
         high=".60"
-        optimum=".80"
+        low=".30"
         max="1"
+        min="0"
+        optimum=".80"
         value="${skill.value}"
       ></meter>
       <div class="skill__value">

@@ -1,10 +1,8 @@
-// ### Projects
+// ## Projects
 "use strict";
 
-const Projects = Portfolio.querySelector(".projects");
-
 portfolioWorksDB.forEach((project_arr) =>
-  Projects.insertAdjacentHTML(
+  projects.insertAdjacentHTML(
     "beforeend",
     `
     <div class="project ${project_arr.tags}">

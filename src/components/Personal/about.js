@@ -1,7 +1,8 @@
-// ### About
-"use strict";
 
-const About = document.getElementById("about");
+/*--------------
+    ABOUT
+--------------*/
+"use strict";
 
 [
   `
@@ -32,5 +33,7 @@ const About = document.getElementById("about");
   container.classList = "about__text";
   container.innerText = text;
 
-  About.insertAdjacentElement("beforeend", container);
+  document
+    .getElementById("about")
+    .insertAdjacentElement("beforeend", container);
 });

@@ -3,7 +3,7 @@
 On this page my portfolio, skills list, experience, education and contacts.
 
 
-## My skills
+### My skills
 
 - HTML 88.4
 - CSS 81.9
@@ -24,7 +24,7 @@ On this page my portfolio, skills list, experience, education and contacts.
 - Design 66.1
 
 
-## About me
+### About me
 
 I can:
 - create SPA in vanilla JavaScript;
@@ -48,9 +48,11 @@ I am able:
 I am well organized. Ready to work.
 
 
-## Contact me
-[Mail](mailto:alexander.poz.ur@gmail.com)
+### Contact me
 
-<!-- <img width="960" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/123512015-a14f6580-d68d-11eb-9489-0a594ca079e0.png"> -->
-<img height="200px" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/124184240-f0e4c580-dac1-11eb-9487-c7133edde603.png">
-<img height="200px" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/124184308-0e199400-dac2-11eb-9ad1-804fd2beda51.png">
+- [Mail](mailto:alexander.poz.ur@gmail.com)
+
+### ScrinShots
+<img width="960" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/123512015-a14f6580-d68d-11eb-9489-0a594ca079e0.png">
+<img height="960" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/124184240-f0e4c580-dac1-11eb-9487-c7133edde603.png">
+<img height="250" alt="Code_NUl083Ho13" src="https://user-images.githubusercontent.com/70973663/124184308-0e199400-dac2-11eb-9ad1-804fd2beda51.png">

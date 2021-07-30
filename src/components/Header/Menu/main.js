@@ -1,4 +1,3 @@
-
 /*--------------
     MAIN
 --------------*/
@@ -6,7 +5,7 @@
 
 const menu = document.getElementById("menu");
 
-["portfolio", "skills", "experience", "education", "about", "contact"].forEach(
+["portfolio", "skills", "experience", "education", "about", "contact"].map(
   (menu_itemText) =>
     menu.querySelector(".menu__ul").insertAdjacentHTML(
       "beforeend",

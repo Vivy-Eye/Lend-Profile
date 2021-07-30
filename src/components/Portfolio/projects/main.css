@@ -35,21 +35,21 @@
 }
 
 .project__title{
-  position: absolute;
-  z-index: 1;
-  padding: 1rem;
-  /* background-color: #d6d6d671; */
+  align-items: center;
+  color: #e2e2e2;
+  display: flex;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.6rem;
-  color: #e2e2e2;
   font-weight: 100;
-  letter-spacing: .3rem;
-  /* text-shadow: 2px 2px 0 black,-2px -2px 0 black; */
-  width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  letter-spacing: .3rem;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  /* background-color: #d6d6d671; */
+  /* text-shadow: 2px 2px 0 black,-2px -2px 0 black; */
 }
 .project__front-img{
   filter: blur(2px) brightness(60%);
